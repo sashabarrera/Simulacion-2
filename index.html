@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SashaBarrera">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO Y BARRA DE NAVEGACIÓN -->
+    <header>
+        <nav class="nav">
+            <!-- Logotipo y nombre de la página -->
+            <div class="Barra-nav">
+                <img src="static/images/img.png" alt="Libro">
+                <h1>Biblioteca<span class="Azul"><br>Horizontal</span></h1>
+            </div>
+
+            <!-- Zona de login y contador de libreta -->
+            <div class="busqueda-nav">
+                <input type="text" id="email" name="email" placeholder="Email">
+                <button class="barra-boton">Ingresar</button>
+                <div class="libreta">
+                    <img src="static/images/img1.png" alt="Libreta">
+                    <p>Libros<br>seleccionados: <span>0</span></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main">
+
+        <!-- SECCIÓN SUPERIOR: CATEGORÍAS EN BLOQUE HORIZONTAL -->
+        <section class="seccion-superior">
+            <div class="contenido-main">
+                <img src="static/images/img.png" alt="Novelas">
+                <p>Novelas</p>
+            </div>
+
+            <div class="contenido-main">
+                <img src="static/images/img2.png" alt="Ciencia">
+                <p>Ciencia</p>
+            </div>
+
+            <div class="contenido-main">
+                <img src="static/images/img3.png" alt="Historia">
+                <p>Historia</p>
+            </div>
+
+            <div class="contenido-main">
+                <img src="static/images/img4.png" alt="Tecnología">
+                <p>Tecnología</p>
+            </div>
+
+            <div class="contenido-main">
+                <img src="static/images/img5.png" alt="Arte">
+                <p>Arte</p>
+            </div>
+
+            <div class="contenido-main">
+                <img src="static/images/img6.png" alt="Infantil">
+                <p>Infantil</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN IZQUIERDA: PRESENTACIÓN Y REPRODUCTOR DE VIDEO -->
+        <section class="seccion_izquerda">
+            <div class="contenido_izquerda">
+                <!-- Texto descriptivo con título y párrafo -->
+                <div class="texto">
+                    <h2>Descubre <br>Nuevas Historias</h2>
+                    <div class="linea-horizontal"></div>
+                    <p>Explora nuestra biblioteca virtual y encuentra libros para todos los gustos. Conocimiento,
+                        aventura y mucho más al alcance de un clic.</p>
+                </div>
+
+                <!-- Contenedor del video y su leyenda inferior -->
+                <div class="contenedor-video">
+                    <video src="static/video/La Magia de los Libros - Biblioteca Digital Escolar.mp4" autoplay loop
+                        muted controls></video>
+                    <p class="texto_chico">Conoce la Biblioteca Horizonte</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DERECHA: RECOMENDACIONES DE LIBROS -->
+        <section class="seccion-derecha">
+            <h3>Libros recomendados:</h3>
+
+            <!-- Tarjeta 1 -->
+            <div class="contenido-derecho">
+                <img src="static/images/img7.png" alt="Cien años de soledad">
+                <div class="info-libro">
+                    <p>Cien años de soledad</p>
+                    <span>Gabriel García Márquez</span>
+                    <a href="#">Ver más...</a>
+                </div>
+                <button class="derecho-boton">+</button>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="contenido-derecho">
+                <img src="static/images/img7.png" alt="Sapiens">
+                <div class="info-libro">
+                    <p>Sapiens</p>
+                    <span>Yuval Noah Harari</span>
+                    <a href="#">Ver más...</a>
+                </div>
+                <button class="derecho-boton">+</button>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="contenido-derecho">
+                <img src="static/images/img7.png" alt="El principito">
+                <div class="info-libro">
+                    <p>El principito</p>
+                    <span>Antoine de Saint-Exupéry</span>
+                    <a href="#">Ver más...</a>
+                </div>
+                <button class="derecho-boton">+</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
