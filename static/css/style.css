@@ -86,7 +86,6 @@ BARRA DE NAVEGACION
 LADO SUPERIOR (Categorías)
    ========================================== */
 .main {
-    max-width: 1300px;
     margin: 15px auto;
     padding: 0 15px;
     display: flex;
@@ -139,7 +138,7 @@ LADO IZQUIERDO (Presentación y Video)
     background-color: #e5e5e5;
     display: flex;
     align-items: center;
-    padding: 177px 35px;
+    padding: 166px 35px;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -180,7 +179,7 @@ LADO IZQUIERDO (Presentación y Video)
 }
 
 .contenido_izquerda video {
-    width: 380px;
+    width: 395px;
     height: auto;
     object-fit: cover;
     background-color: #000;
