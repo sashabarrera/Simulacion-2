@@ -1,16 +1,25 @@
-console.log("Conexion correcta...")
+console.log("Conexion correcta...");
 
 
 
-function mostrarCorreo() {
-    const correo = document.querySelector('#correo').value;
-    if (correo) {
-        alert("Iniciando sesión con: " + correo);
+document.addEventListener('DOMContentLoaded', function () {
+
+    // 1. Alerta con el correo al hacer clic en "Ingresar"
+    const botonIngresar = document.querySelector('.barra-boton');
+    const inputUsuario = document.getElementById('email');
+
+    if (botonIngresar !== null && inputUsuario !== null) {
+        botonIngresar.addEventListener('click', function () {
+            let correo = inputUsuario.value;
+            if (correo !== "") {
+                alert(`Bienvenido\n${correo}`);
+            } else {
+                alert("Por favor, ingresa un correo.");
+            }
+        });
     } else {
-        alert("Por favor, ingresa un correo electrónico.");
+        console.log("No se encontró el botón de ingresar o el campo de usuario.");
     }
-}
-
 
 
 let contador = 0;
@@ -24,25 +33,29 @@ for (let i = 0; i < botones.length; i++) {
     };
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Seleccionamos el video por su ID
-    const video = document.getElementById('miVideo');
 
-    // Definimos las rutas de ambos videos (sin espacios)
-    const videoOriginal = "static/video/La Magia de los Libros - Biblioteca Digital Escolar.mp4";
-    const videoNuevo = "static/video/Mineduc_ Aprenda a usar la Biblioteca Digital Escolar _ #DesdeCasa.mp4";
+    
+    // 3. Cambiar de video al pasar el cursor (hover / mouseover y mouseout)
+    const video = document.querySelector('.contenedor_video video');
+    if (video !== null) {
+        const videoOriginal = video.src;
+        const videoNuevo = 'static/video/Mineduc_ Aprenda_a_usar_la_Biblioteca_Digital_Escolar_ #DesdeCasa.mp4';
 
-    // Cuando el cursor del mouse pasa por encima del video (hover)
-    video.addEventListener('mouseenter', function() {
-        video.src = videoNuevo;
-        video.load(); // Fuerza al navegador a cargar la nueva ruta
-        video.play(); // Asegura que el nuevo video se reproduzca
-    });
+        video.addEventListener('mouseover', function () {
+            video.src = videoNuevo;
+            video.play();
+        });
+        video.addEventListener('mouseout', function () {
+            video.src = videoOriginal;
+            video.play();
+        });
+    }
 
-    // Cuando el cursor del mouse sale del área del video
-    video.addEventListener('mouseleave', function() {
-        video.src = videoOriginal;
-        video.load(); // Fuerza al navegador a cargar la ruta original
-        video.play(); // Vuelve a reproducir el video original
-    });
-});
+}) 
+
+
+
+
+
+
+

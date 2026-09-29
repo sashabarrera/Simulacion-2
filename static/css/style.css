@@ -75,6 +75,7 @@ BARRA DE NAVEGACION
     align-items: center;
     gap: 6px;
     margin-left: 8px;
+    flex-wrap: wrap;
 }
 
 .libreta img {
@@ -85,7 +86,7 @@ BARRA DE NAVEGACION
 LADO SUPERIOR (Categorías)
    ========================================== */
 .main {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 15px auto;
     padding: 0 15px;
     display: flex;
@@ -115,9 +116,8 @@ LADO SUPERIOR (Categorías)
 }
 
 .contenido-main img {
-    width: 70px;
-    height: 60px;
-    object-fit: contain;
+    width: auto;
+    height: 50px;
     margin-bottom: 8px;
 }
 
@@ -131,6 +131,7 @@ LADO IZQUIERDO (Presentación y Video)
 .seccion_izquerda {
     width: 66%;
     display: flex;
+    overflow: hidden;
 }
 
 .contenido_izquerda {
@@ -138,7 +139,7 @@ LADO IZQUIERDO (Presentación y Video)
     background-color: #e5e5e5;
     display: flex;
     align-items: center;
-    padding: 90px;
+    padding: 137px 35px;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -179,8 +180,8 @@ LADO IZQUIERDO (Presentación y Video)
 }
 
 .contenido_izquerda video {
-    width: 340px;
-    height: 250px;
+    width: 360px;
+    height: 200px;
     object-fit: cover;
     background-color: #000;
     flex-wrap: wrap;
@@ -198,6 +199,7 @@ LADO DERECHO (Recomendaciones)
 .seccion-derecha {
     width: 32%;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .seccion-derecha h3 {
@@ -216,6 +218,7 @@ LADO DERECHO (Recomendaciones)
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    overflow: hidden;
 }
 
 .contenido-derecho img {
@@ -233,19 +236,20 @@ LADO DERECHO (Recomendaciones)
 }
 
 .contenido-derecho p {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     color: #000000;
 }
 
 .contenido-derecho span {
     color: #666;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .contenido-derecho a {
     color: #0f57e7;
-    font-size: 12px;
+    font-size: 16px;
+    margin: 10px;
 }
 
 .derecho-boton {
