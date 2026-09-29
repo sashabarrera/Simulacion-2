@@ -180,8 +180,8 @@ LADO IZQUIERDO (Presentación y Video)
 }
 
 .contenido_izquerda video {
-    width: 360px;
-    height: 200px;
+    width: 380px;
+    height: auto;
     object-fit: cover;
     background-color: #000;
     flex-wrap: wrap;
